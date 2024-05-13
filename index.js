@@ -28,7 +28,8 @@ function renderTodo() {
         renderTodo();
         " > DELETE</button>`;
    todoHtml += html;
-  }sult.innerHTML = todoHtml;
+  }
+  result.innerHTML = todoHtml;
 }
 // addTodo();
 
