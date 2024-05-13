@@ -21,15 +21,20 @@ function renderTodo() {
     let todo = res[i];
     let {name, dueDateValue} = todo;
      let html = `
-    <p>${name}${dueDateValue}
+        <div class="div">${name}</div>
+        <div class="div">${dueDateValue}</div>
         <button onclick="
         res.splice(${i}, 1);
         renderTodo();
-        " > DELETE</button>
-    </p>`;
+        " > DELETE</button>`;
    todoHtml += html;
-  }
-  result.innerHTML = todoHtml;
+  }sult.innerHTML = todoHtml;
 }
 // addTodo();
 
+
+function useEnter(event){
+    if(event.key === "Enter"){
+     return   addTodo();
+    }
+}
